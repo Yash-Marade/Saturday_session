@@ -10,15 +10,17 @@ public class alarm {
 		int day = sc.nextInt();
 		System.out.println("Enter true or false for vacation ");
 		boolean vacation = sc.nextBoolean();
-		if ( day == 0 || day == 1 || day == 2 || day == 3 || day == 4 || day == 5 || day == 6) {
+		if ( day == 0 || day == 1 || day == 2 || day == 3 || day == 4 ) {
 			if(vacation == false) {
 				System.out.println("7:00 AM");
 			} else {
 				System.out.println("10:00 AM");
 			}
 			
-		} else {
-			System.out.println("invalid Input");
+		} else if(day == 5 || day == 6) {
+			System.out.println("OFF");
+			
+		}
 			
 		}
 		
@@ -26,4 +28,4 @@ public class alarm {
 		
 	}
  
-}
+
