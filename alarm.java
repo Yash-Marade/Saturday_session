@@ -1,4 +1,5 @@
 
+
 import java.util.Scanner;
 
 
@@ -18,8 +19,14 @@ public class alarm {
 			}
 			
 		} else if(day == 5 || day == 6) {
-			System.out.println("OFF");
-			
+			if(vacation == false) {
+			System.out.println("10:00");
+		}else {
+			System.out.println("off");
+		} 
+		}
+		else {
+			System.out.println("Invalid input");
 		}
 			
 		}
